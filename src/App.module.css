@@ -1,0 +1,54 @@
+.NaglowekStrony {
+    text-align: center;
+    font-size: 1.4em;
+    font-style: italic;
+    background-color: red;
+}
+
+.SingleLogo {
+    margin: 5px;
+    border: 5px solid black;
+    padding: 4px;
+    width: 50%;
+    transition: 1s;
+}
+
+.SingleLogo:hover {
+    animation-name: nasza_animacja;
+    animation-duration: 1s;
+    animation-direction: normal;
+    background-color: violet;
+    font-size: 6em;
+}
+
+@keyframes nasza_animacja {
+    0%{
+        background-color: blue;
+        font-size: 1.4em;
+    }
+    50%{
+        background-color: yellow;
+        font-size: 2em;
+    }
+    100%{
+        background-color: violet;
+        font-size: 6em;
+    }
+}
+
+.Logos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.LewaStrona {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.Tytul {
+    background-color: blue;
+    width: 100%;
+}
